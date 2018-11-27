@@ -1,5 +1,5 @@
 function [crs_section, crs_gathers, offsets_for_gathers, midpoints_for_gathers] ...
-    = FO_CRS(traces, midpoints, offsets, dt, A, B, C, D, E, output_midpoints, output_offsets, aptx, apth)
+    = FO_CRS(traces, midpoints, offsets, dt, CRS_parameters, output_midpoints, output_offsets, aptx, apth)
 
 %Output array
 crs_section  = zeros(size(traces,1), length(output_midpoints), length(output_offsets));
@@ -17,11 +17,11 @@ for x0 = output_midpoints
     hi = 1;
     for h0 = output_offsets;
 
-        a = collect_param_at_ind(A,xi,hi);
-        b = collect_param_at_ind(B,xi,hi);
-        c = collect_param_at_ind(C,xi,hi);
-        d = collect_param_at_ind(D,xi,hi);
-        e = collect_param_at_ind(E,xi,hi);
+        a = collect_param_at_ind(CRS_parameters.A,xi,hi);
+        b = collect_param_at_ind(CRS_parameters.B,xi,hi);
+        c = collect_param_at_ind(CRS_parameters.C,xi,hi);
+        d = collect_param_at_ind(CRS_parameters.D,xi,hi);
+        e = collect_param_at_ind(CRS_parameters.E,xi,hi);
     
         %Select traces within aperture
         inds_in_apt = ...

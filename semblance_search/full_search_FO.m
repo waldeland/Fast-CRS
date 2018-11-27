@@ -14,7 +14,7 @@ best_e = zeros(size(traces,1), length(output_midpoints), length(output_offsets))
 
 %Loop through parameter combinations
 LoopProgressReport('Running FO CRS search'); i = 1; 
-N = length(param_search_range.B)*length(param_search_range.A)*length(param_search_range.C_as_v)*length(param_search_range.D_as_v)*length(param_search_range.E);
+N = length(param_search_range.B)*length(param_search_range.A)*length(param_search_range.C)*length(param_search_range.D)*length(param_search_range.E);
 
 for A = param_search_range.A
     A = A + initial_params.A;
@@ -22,13 +22,11 @@ for A = param_search_range.A
     for B = param_search_range.B
         B = B + initial_params.B;
         
-        for C = param_search_range.C_as_v
-            c_as_v = sqrt(4./initial_params.C) + C;
-            C = 4./c_as_v.^2;
+        for C = param_search_range.C
+            C = C + initial_params.C;
             
-            for D = param_search_range.D_as_v
-                d_as_v = sqrt(4./initial_params.D) + D;
-                D = 4./d_as_v.^2;
+            for D = param_search_range.D
+                D = D + initial_params.D;
                 
                 for E = param_search_range.E
                     E = E + initial_params.E;
