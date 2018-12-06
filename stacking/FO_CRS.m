@@ -40,7 +40,7 @@ for x0 = output_midpoints
         %loop through traces
         for ti = 1:size(traces_in_apt,2)
             h = offsets_in_apt(ti);
-            x = offsets_in_apt(ti);
+            x = midpoints_in_apt(ti);
 
             trace = traces_in_apt(:,ti);
 
