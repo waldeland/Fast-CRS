@@ -1,9 +1,10 @@
 function [e1,e2,v1,v2] = eigRealSym2x2(T,sign_dim)
+% A vectorized implementation of eigenvalue decomposition of a symmetric
+% 2x2 matrix
 if nargin<1;
     test();
     return
 end
-
 
 %Eigenvalue decomposition 
 %https://en.wikipedia.org/wiki/Eigenvalue_algorithm

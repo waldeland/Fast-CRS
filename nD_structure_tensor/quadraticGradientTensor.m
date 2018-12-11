@@ -1,9 +1,3 @@
-%% Quadratic Gradient tensor ND
-%==========================================================================
-% Returns the (quadratic) gradient tensor fields 
-% Created by Anders, Aug 2. 2017
-%==========================================================================
-
 function [T,xT,XT]  = quadraticGradientTensor(data, sigma_g, sigma_T, compute_QST)
 if ~exist('compute_QST','var'); compute_QST = true; end; %Switch to not compute xT and XT if only GST is needed
 break_of_sigma = 3.; %number og std with of gaussian functions

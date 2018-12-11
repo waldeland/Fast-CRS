@@ -198,7 +198,7 @@ end
 function [e,v] = eigenvalue_decomposition(T)
 global N dim
 
-%If 2D or 3D we use a vectorized faster implementation
+%If 3D we use a vectorized faster implementation
 if dim == 3;
     [e1,e2,e3,v1,v2,v3] = fastEig3D(T,1) ;
     e = cat(1,e1,e2,e3);
