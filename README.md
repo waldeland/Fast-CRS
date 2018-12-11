@@ -5,9 +5,7 @@ Fast estimation of CRS parameters using structure tensors.
 A MATLAB implementation of the method described in:
 
 Fast and robust common-reflection-surface parameter estimation.
-
 Waldeland, Anders Ueland; Zhao, Hao; Faccipieri, J. H.; Solberg, Anne H Schistad; Gelius, Leiv-J.
-
 Geophysics. 2017, 83 (1), O1-O13, DOI: http://dx.doi.org/10.1190/geo2017-0113.1
 
 ### Setup:
