@@ -128,7 +128,7 @@ for ia = 1:Napt;
         t_crs = sqrt( ( t  + a_dm ).^2 + b_dm_2 + ch2 );
         
         %Linear interpolation
-        tmp = (t_crs-t0)/dt;
+        tmp = (t_crs)/dt;
         upp = ceil( tmp );
         low = floor( tmp );
         
