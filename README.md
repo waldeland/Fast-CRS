@@ -8,6 +8,10 @@ Fast and robust common-reflection-surface parameter estimation.<br>
 Waldeland, Anders Ueland; Zhao, Hao; Faccipieri, J. H.; Solberg, Anne H Schistad; Gelius, Leiv-J.<br>
 Geophysics. 2017, 83 (1), O1-O13, DOI: http://dx.doi.org/10.1190/geo2017-0113.1
 
+Fast estimation of prestack common reflection surface parameters
+Anders U. Waldeland  Tiago A. Coimbra  Jorge H. Faccipieri  Anne H. Schistad Solberg  Leiv‐J. Gelius
+Geophysical Prospecting, 2019, online pre-paper, https://onlinelibrary.wiley.com/doi/abs/10.1111/1365-2478.12740
+
 ### Setup:
 * Clone this repository
 * Enter the utils/lininterpf/ directory and run build.m to compile the lininterp1f function
