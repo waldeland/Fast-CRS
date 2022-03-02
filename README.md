@@ -24,6 +24,7 @@ Geophysical Prospecting, 2019, online pre-paper, https://onlinelibrary.wiley.com
 * The folder nD_structure_tensor contains an n-dimensional implementation of the gradient structure tensor (GST)  and the quadratic gradient structure tensor (QST)
 * The folder 2D_structure_tensor contains a 2-dimensional implementation of the gradient structure tensor which should be more easy to understand than the n-dimensional.
 * structure_tensors.pdf - Details about the GST and QST.
+* dip_estimation_3d.py - an (incomplete) example of how dip estimation can be done in python using the structure-tensor package (https://pypi.org/project/structure-tensor/)
 
 # Credit:
 Fast linear interpolation method by Umberto Picchini is included in this repositorty (https://se.mathworks.com/matlabcentral/fileexchange/8627-fast-linear-interpolation)
